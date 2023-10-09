@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,300&display=swap');
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -6,7 +8,7 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Titillium Web', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -33,6 +35,8 @@
   gap: 1rem;
   padding: 1rem;
   border-radius: 1rem;
+  box-shadow: 5px 5px 13px -5px rgba(0, 0, 0, 0.2), -5px -5px 13px -5px rgba(255, 255, 255, 0.3);
+  background: #Fbfbfb;
 }
 
 .center-center {
@@ -81,5 +85,38 @@ header {
 
   button {
     background-color: #f9f9f9;
+  }
+}
+
+
+@media (max-width : 950px) {
+  .nav-menu {
+    flex-direction: row;
+    bottom: 1rem;
+    left: 50%;
+    translate: -50% 0;
+    top: unset;
+  }
+
+  .nav-icon {
+    display: flex;
+  }
+
+  .nav-menu img {
+    max-width: 2.6rem;
+  }
+
+  header {
+    font-size: 6rem;
+    line-height: 5rem;
+  }
+
+  .hero.container img {
+    width: 26%;
+  }
+
+  .sub-header {
+    font-size: 1.1rem;
+    padding-top: unset;
   }
 }
